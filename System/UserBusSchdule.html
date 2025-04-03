@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .schedule-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Today's Bus Schedule</h1>
+        <img id="bus-schedule-image" class="schedule-image" src="/Images/schedule.jpg" alt="Bus Schedule">
+    </div>
+
+    <script>
+        function loadSavedImage() {
+            const savedImage = localStorage.getItem('uploadedBusScheduleImage');
+            if (savedImage) {
+                document.getElementById('bus-schedule-image').src = savedImage;
+            }
+        }
+
+        window.onload = loadSavedImage;
+    </script>
+</body>
+
+</html>
