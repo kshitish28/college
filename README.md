@@ -2,8 +2,8 @@
 
 <div align="center">
 
-<h1>🎓 DCU: Dynamic Convergence University</h1>
-<p><em>An educational full-stack university website project</em></p>
+<h1>🎓 GEC: Gandhi Engineering College</h1>
+<p><em>An educational full-stack college website project</em></p>
 
 <p>
 🔗 <a href="https://gec-college.vercel.app/">Live Website</a> • 
