@@ -1,30 +1,57 @@
 <a name="readme-top"></a>
-<br />
+
 <div align="center">
-<a href="https://ranitmanik.github.io/College-Website/">Visit the Website »</a>
-<br >
-  <br>
-<a href="https://ranitmanik.github.io/College-Website/">View Demo</a>
-·
-<a href=".github/ISSUE_TEMPLATE/bug_report.md">Report Bug</a>
-·
-<a href=".github/ISSUE_TEMPLATE/feature_request.md">Request Feature</a>
-  </p>
+
+<h1>🎓 DCU: Dynamic Convergence University</h1>
+<p><em>An educational full-stack university website project</em></p>
+
+<p>
+🔗 <a href="https://ranitmanik.github.io/College-Website/">Live Website</a> • 
+🎬 <a href="https://ranitmanik.github.io/College-Website/">View Demo</a> • 
+🐞 <a href=".github/ISSUE_TEMPLATE/bug_report.md">Report a Bug</a> • 
+🌟 <a href=".github/ISSUE_TEMPLATE/feature_request.md">Request a Feature</a>
+</p>
+
+<img src="Images/screenshot.png" alt="Screenshot" width="100%" />
+
 </div>
-<br>
 
-# About The Project
+---
 
-Within this repository, you'll discover a practice project focused on constructing the DCU: Dynamic Convergence University website. This endeavor encompasses both frontend and backend development, serving as a personal platform for honing comprehensive web development skills. Please note that this is not an official release but rather an educational undertaking. I developed the website primarily using HTML and CSS, but I integrated PHP to handle the backend mailing system. Hope you will like that.
+## 📌 About The Project
 
-# Getting Started
+**DCU: Dynamic Convergence University** is a self-initiated practice project aimed at mastering full-stack web development. It simulates a functional college management system that includes pages for student services, registration, and more.
 
-_To get started with this project, follow these steps :_
-<br>
+> 🚧 _This is a learning-focused project, not intended for production._
 
-- Thank you for visiting my college website, and we hope you enjoy exploring my repository!
+---
 
+## 🌟 Features
 
+✅ Modern responsive design using HTML/CSS  
+✅ Functional components styled like a real-world portal  
+✅ Dynamic UI elements and interactive sections  
+✅ PHP-integrated contact form (Backend mailing system)  
+✅ Clean code structure for scalability and extension  
+✅ Student Dashboard with navigation and user profile layout  
+✅ Modular page support (Attendance, Timetable, Marks, etc.)
 
+---
 
-[product-screenshot]: Images/screenshot.png
+## 📂 Tech Stack
+
+| Frontend        | Backend        | Tools / Platforms     |
+|-----------------|----------------|------------------------|
+| HTML5           | PHP            | Git & GitHub           |
+| CSS3            | Mail Server (PHP) | VS Code              |
+| JavaScript (Basic) | -            | GitHub Pages Deployment |
+
+---
+
+## 🚀 Getting Started
+
+To get a local copy up and running:
+
+```bash
+git clone https://github.com/ranitmanik/College-Website.git
+cd College-Website
