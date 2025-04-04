@@ -51,5 +51,5 @@
 To get a local copy up and running:
 
 ```bash
-git clone https://github.com/ranitmanik/College-Website.git
-cd College-Website
+git clone https://github.com/kshitish28/college.git
+cd college
