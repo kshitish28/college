@@ -22,7 +22,7 @@
                 <img src="/Images/profile.png" alt="Profile">
             </div>
             <div class="user-info">
-                <p>Welcome <strong>Baidyanath Sahu</strong></p>
+                <p>Welcome <strong>User</strong></p>
                 <p>Logged in as <span class="highlight">Student</span></p>
                 <p id="date-time"></p>
             </div>
@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                     <th>Name</th>
-                    <td>Baidyanath Sahu</td>
+                    <td>User</td>
                     <td rowspan="6" class="profile-cell">
                         <img src="/Images/profile.png" alt="Profile">
                     </td>

@@ -27,7 +27,7 @@
     
         <div class="top-right">
             <div class="user-info">
-                <p>Welcome <strong>Baidyanath Sahu</strong></p>
+                <p>Welcome <strong>User</strong></p>
                 <p>Logged in as <strong>Student</strong></p>
                 <p id="last-updated">Updated on: <span id="update-time"></span></p>     
             </div>
@@ -211,6 +211,8 @@
             document.querySelectorAll(".sem-btn").forEach(btn => btn.classList.remove("active"));
             document.querySelectorAll(".sem-btn")[sem - 1].classList.add("active");
         }
+        
+        document.getElementById('update-time').textContent = new Date().toLocaleString();
     </script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regular Registration</title>
+  <link rel="stylesheet" href="Attendance.css" />
+</head>
+<body>
+  <!-- 🔹 Top Navigation Bar -->
+  <div class="top-bar">
+    <div class="logo">Regular Registration</div>
+    <div class="top-right">
+      <a href="#">Back</a>
+      <a href="#">Home</a>
+      <a href="Landing.html" class="logout-btn">Log Out</a>
+    </div>
+  </div>
+
+  <!-- ✅ Profile Bar -->
+  <div class="user-bar">
+    <div class="logo">
+      <img src="/Images/college_logo.png" alt="Logo" />
+    </div>
+    <div class="top-right">
+      <div class="user-info">
+        <p>Welcome <strong>User</strong></p>
+        <p>Logged in as <strong>Student</strong></p>
+        <p id="last-updated">Updated on: <span id="update-time"></span></p>
+      </div>
+      <div class="profile">
+        <img src="/Images/profile.png" alt="Profile Picture" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- ✅ Sidebar -->
+    <div class="sidebar">
+      <a href="StudentDesk.html"><button class="sidebar-btn">View Information</button></a>
+      <a href="Attendance.html"><button class="sidebar-btn">View Attendance</button></a>
+      <a href="marks.html"><button class="sidebar-btn">View Internal Marks</button></a>
+      <a href="dues.html"><button class="sidebar-btn">View Dues</button></a>
+      <a href="clearance.html"><button class="sidebar-btn">View Clearance Details</button></a>
+      <a href="regular_registration.html"><button class="sidebar-btn active">Regular Registration</button></a>
+      <a href="back_paper_registration.html"><button class="sidebar-btn">Back Paper Registration</button></a>
+      <a href="remedial_registration.html"><button class="sidebar-btn">Remedial Registration</button></a>
+      <a href="special_exam.html"><button class="sidebar-btn">Special Exam Registration</button></a>
+      <a href="timetable.html"><button class="sidebar-btn">View Timetable</button></a>
+    </div>
+
+    <!-- ✅ Content Area -->
+    <div class="content">
+      <h2 style="text-align: center; margin-top: 50px;">🛠️ This feature is coming soon!</h2>
+      <p style="text-align: center; font-size: 18px; color: gray;">
+        Regular Registration will be available in a future update. Stay tuned!
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Display current time as "last updated"
+    const updateSpan = document.getElementById("update-time");
+    const now = new Date();
+    updateSpan.textContent = now.toLocaleString();
+  </script>
+</body>
+</html>
