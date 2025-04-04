@@ -6,13 +6,11 @@
 <p><em>An educational full-stack university website project</em></p>
 
 <p>
-🔗 <a href="https://ranitmanik.github.io/College-Website/">Live Website</a> • 
-🎬 <a href="https://ranitmanik.github.io/College-Website/">View Demo</a> • 
-🐞 <a href=".github/ISSUE_TEMPLATE/bug_report.md">Report a Bug</a> • 
-🌟 <a href=".github/ISSUE_TEMPLATE/feature_request.md">Request a Feature</a>
+🔗 <a href="https://gec-college.vercel.app/">Live Website</a> • 
+🎬 <a href="https://gec-college.vercel.app/">View Demo</a> • 
 </p>
 
-<img src="Images/screenshot.png" alt="Screenshot" width="100%" />
+<img src="/Images/screenshot.png" alt="Screenshot" width="100%" />
 
 </div>
 
