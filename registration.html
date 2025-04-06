@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #187bcd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Event Registration Form</h2>
+    <form action="register.php" method="POST">
+        <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Contact Number *</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+        </div>
+
+        <div class="form-group">
+            <label for="college">College Name *</label>
+            <input type="text" id="college" name="college" required>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department *</label>
+            <input type="text" id="department" name="department" required>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year of Study *</label>
+            <select id="year" name="year" required>
+                <option value="">-- Select Year --</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="event">Select Event *</label>
+            <select id="event" name="event" required>
+                <option value="">-- Select Event --</option>
+                <option value="Coding Contest">Coding Contest</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Robotics Challenge">Robotics Challenge</option>
+                <option value="Poster Presentation">Poster Presentation</option>
+                <option value="Cultural Performance">Cultural Performance</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Any Comments</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any special requirements or notes..."></textarea>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

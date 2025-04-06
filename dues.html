@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Dues</title>
+    <link rel="stylesheet" href="dues.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">View Dues</div>
+        <div class="top-right">
+            <a href="#">Back</a>
+            <a href="#">Home</a>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+
+    <div class="user-bar">
+        <div class="logo">
+            <img src="/Images/college_logo.png" alt="College Logo">
+            <div class="logo-text"></div>
+        </div>
+        <div class="top-right">
+            <div class="user-info">
+                <p>Welcome <strong>User</strong></p>
+                <p>Logged in as <strong>Student</strong></p>
+                <p id="last-updated">Updated on: <span id="update-time"></span></p>
+            </div>
+            <div class="profile">
+                <img src="/Images/profile.png" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="StudentDesk.html"><button class="sidebar-btn">View Information</button></a>
+            <a href="Attendance.html"><button class="sidebar-btn">View Attendance</button></a>
+            <a href="marks.html"><button class="sidebar-btn">View Internal Marks</button></a>
+            <a href="dues.html"><button class="sidebar-btn active">View Dues</button></a>
+            <a href="clearance.html"><button class="sidebar-btn">View Clearance Details</button></a>
+            <a href="regular_registration.html"><button class="sidebar-btn">Regular Registration</button></a>
+            <a href="back_paper_registration.html"><button class="sidebar-btn">Back Paper Registration</button></a>
+            <a href="remedial_registration.html"><button class="sidebar-btn">Remedial Registration</button></a>
+            <a href="special_exam.html"><button class="sidebar-btn">Special Exam Registration</button></a>
+            <a href="timetable.html"><button class="sidebar-btn">View Timetable</button></a>
+            <a href="registration.html"><button class="sidebar-btn">Event Registration</button></a>
+        </div>
+
+        <div class="content">
+            <h2>View Dues</h2>
+            <p>All fees are to be paid by account transfer/deposit in the authorized account of the Institute (GEC Colllege) only.</p>
+            <p>After the payment, please send an email with details of the payment in below format, to fees@gec.edu with the Subject : "Payment of Academic Fees/Mess Dues" :-</p>
+
+            <div class="payment-details">
+                <h3>Payment Details Format</h3>
+                <ol>
+                    <li>Transaction ID:-</li>
+                    <li>Date:-</li>
+                    <li>Amount:-</li>
+                    <li>Name of the Student:-</li>
+                    <li>Roll Number of the Student:-</li>
+                    <li>Course:-</li>
+                    <li>Batch:-</li>
+                </ol>
+            </div>
+
+            <div class="bank-details">
+                <h3>Fees Deposit Account Details</h3>
+                <table>
+                    <tr><td>Bank</td><td>XYZ Bank of India</td></tr>
+                    <tr><td>Name</td><td>GEC College</td></tr>
+                    <tr><td>IFSC</td><td>XYZBI0012345</td></tr>
+                    <tr><td>A/C</td><td>0123456789234</td></tr>
+                </table>
+            </div>
+
+            <h3>Old Mess Dues (Before 01<sup>st</sup> July 2019)</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Due Month</th>
+                    <th>Due Year</th>
+                    <th>Debit Amount</th>
+                    <th>Credit Amount</th>
+                    <th>Due Amount</th>
+                </tr>
+                <tr><td>09-11-2023</td><td>September</td><td>2023</td><td>3820</td><td>0</td><td>3820</td></tr>
+                <tr><td>09-11-2023</td><td>October</td><td>2023</td><td>3834</td><td>0</td><td>3834</td></tr>
+                <tr><td>06-12-2023</td><td>December</td><td>2023</td><td>3867</td><td>0</td><td>3867</td></tr>
+                <tr><td>07-12-2023</td><td>November</td><td>2023</td><td>4000</td><td>0</td><td>4000</td></tr>
+                <tr><td>26-10-2023</td><td>August</td><td>2023</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>03-10-2024</td><td>September</td><td>2024</td><td>3867</td><td>0</td><td>3867</td></tr>
+                <tr><td>02-04-2024</td><td>March</td><td>2024</td><td>3834</td><td>0</td><td>3834</td></tr>
+                <tr><td>03-07-2024</td><td>June</td><td>2024</td><td>3334</td><td>0</td><td>3334</td></tr>
+                <tr><td>07-05-2024</td><td>April</td><td>2024</td><td>3467</td><td>0</td><td>3467</td></tr>
+                <tr><td>28-12-2024</td><td>November</td><td>2024</td><td>3500</td><td>0</td><td>3500</td></tr>
+                <tr><td>24-01-2025</td><td>December</td><td>2024</td><td>2400</td><td>0</td><td>2400</td></tr>
+                <tr><td>07-05-2024</td><td>May</td><td>2024</td><td>2000</td><td>0</td><td>2000</td></tr>
+            </table>
+
+            <h3>Mess Dues (01<sup>st</sup> July 2019 onwards)</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Due Month</th>
+                    <th>Due Year</th>
+                    <th>Debit Amount</th>
+                    <th>Credit Amount</th>
+                    <th>Due Amount</th>
+                </tr>
+                <tr><td>09-11-2023</td><td>September</td><td>2023</td><td>3820</td><td>0</td><td>3820</td></tr>
+                <tr><td>09-11-2023</td><td>October</td><td>2023</td><td>3834</td><td>0</td><td>3834</td></tr>
+                <tr><td>06-12-2023</td><td>December</td><td>2023</td><td>3867</td><td>0</td><td>3867</td></tr>
+                <tr><td>07-12-2023</td><td>November</td><td>2023</td><td>4000</td><td>0</td><td>4000</td></tr>
+                <tr><td>26-10-2023</td><td>August</td><td>2023</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>03-10-2024</td><td>September</td><td>2024</td><td>3867</td><td>0</td><td>3867</td></tr>
+                <tr><td>02-04-2024</td><td>March</td><td>2024</td><td>3834</td><td>0</td><td>3834</td></tr>
+                <tr><td>03-07-2024</td><td>June</td><td>2024</td><td>3334</td><td>0</td><td>3334</td></tr>
+                <tr><td>07-05-2024</td><td>April</td><td>2024</td><td>3467</td><td>0</td><td>3467</td></tr>
+                <tr><td>28-12-2024</td><td>November</td><td>2024</td><td>3500</td><td>0</td><td>3500</td></tr>
+                <tr><td>24-01-2025</td><td>December</td><td>2024</td><td>2400</td><td>0</td><td>2400</td></tr>
+                <tr><td>07-05-2024</td><td>May</td><td>2024</td><td>2000</td><td>0</td><td>2000</td></tr>
+            </table>
+
+            <h3>Academic Dues</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Debit Amount</th>
+                    <th>Credit Amount</th>
+                    <th>Narration</th>
+                </tr>
+                <tr><td>01-12-2020</td><td>0</td><td>40000</td><td>for fy 2020-2021</td></tr>
+                <tr><td>30-03-2021</td><td>60750</td><td>0</td><td>Academic Fees for FY 2020-21(1st Semester)</td></tr>
+                <tr><td>30-03-2021</td><td>58000</td><td>0</td><td>Academic Fees for FY 2020-21(2nd Semester)</td></tr>
+                <tr><td>08-04-2021</td><td>3000</td><td>0</td><td>Hostel Fees for FY 2020-21(1st Semester)</td></tr>
+                <tr><td>08-04-2021</td><td>10000</td><td>0</td><td>Hostel Fees for FY 2020-21(2nd Semester)</td></tr>
+                <tr><td>12-10-2021</td><td>116000</td><td>0</td><td>Academic Fees for FY 2021-22(2nd Semester)</td></tr>
+                <tr><td>26-10-2021</td><td>0</td><td>40000</td><td>for 21-22</td></tr>
+                <tr><td>21-12-2021</td><td>20000</td><td>0</td><td>Hostel Fees for FY 2021-22</td></tr>
+                <tr><td>23-04-2022</td><td>1000</td><td>0</td><td>Late Payment</td></tr>
+                <tr><td>29-04-2022</td><td>0</td><td>80000</td><td>FY 2022-23</td></tr>
+                <tr><td>10-06-2022</td><td>0</td><td>57000</td><td>FY 2022-23</td></tr>
+                <tr><td>21-07-2022</td><td>0</td><td>50000</td><td>FY 2022-23</td></tr>
+                <tr><td>17-09-2022</td><td>118000</td><td>0</td><td>Academic Fees for FY 2022-23</td></tr>
+                <tr><td>23-09-2022</td><td>20000</td><td>0</td><td>Hostel Fees for FY 2022-23</td></tr>
+                <tr><td>26-10-2022</td><td>0</td><td>20000</td><td>FY 2022-23</td></tr>
+                <tr><td>26-10-2022</td><td>0</td><td>20000</td><td>FY 2022-23</td></tr>
+                <tr><td>17-02-2023</td><td>0</td><td>50000</td><td>FY 2023-24</td></tr>
+                <tr><td>16-05-2023</td><td>0</td><td>49750</td><td>FY 2023-24</td></tr>
+                <tr><td>21-09-2023</td><td>116000</td><td>0</td><td>Academic Fees for FY 2023-24</td></tr>
+                <tr><td>06-10-2023</td><td>20000</td><td>0</td><td>Hostel Fees for FY 2023-24</td></tr>
+                <tr><td>11-10-2023</td><td>0</td><td>39000</td><td>FY 2023-24</td></tr>
+                <tr><td>06-02-2024</td><td>0</td><td>97000</td><td>FY 2023-24</td></tr>
+            </table>
+
+            <div class="footer">
+                <p>This site is maintained by GEC</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('update-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEC Information System - Student Interface</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/Images/college_logo.png" alt="GEC Logo">
+        </div>
+        <div class="header-right">
+            <div class="profile-and-welcome">
+                <div class="welcome-text">
+                    <p id="welcomeUser">Welcome, User</p>
+                    <p id="loginTime"></p>
+                </div>
+                <div class="profile-picture">
+                    <img src="/Images/profile.png" alt="No Profile Photo" />
+                </div>
+            </div>
+            <div class="logout-change-password">
+                <a href="Landing.html" class="logout-btn">Log Out</a>
+                <a href="#" class="change-password-btn">Change My Password</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <!-- Dropdown Menu for Academic -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">Academic</button>
+                    <div class="dropdown-content">
+                        <a href="#">Elective Courses</a>
+                        <a href="#">Final Exam</a>
+                        <a href="#">Knowledge Assessment</a>
+                        <a href="#">Mini Project and Semester</a>
+                        <a href="#">Online Feedback System</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Administrative</button>
+                    <div class="dropdown-content">
+                        <a href="#">Grievance Cell</a>
+                        <a href="#">Project Management System</a>
+                    </div>
+                </div>
+                <!-- <button>Administrative</button> -->
+                <button>Facility Complaint</button>
+                <a href="StudentDesk.html"><button>Student Desk</button></a>
+                <button>Student Handbook</button>
+            </nav>
+            <div class="nist-logo">
+                <img src="/Images/college_logo.png" alt="NIST Logo Large">
+            </div>
+            <div id="birthdayMessage" class="birthday-message"></div>
+        </aside>
+
+        <main class="notice-board">
+            <h2>Notice Board</h2>
+            <div class="notices">
+                <div class="notice">
+                    <h3>Sibling Scholarship for the academic year 2024-25</h3>
+                    <p>
+                        Applications in prescribed proforma invited for award of Sibling Scholarship for the academic
+                        year 2024-25 from eligible students who are pursuing courses in NIST.
+                        <span class="more">More...</span>
+                    </p>
+                    <p class="author">Nrupraj Sahu</p>
+                </div>
+                <div class="notice">
+                    <h3>Examination Schedule_B.Tech-1st Semester Back Examination 2024-25</h3>
+                    <p>
+                        It is hereby informed that B.Tech-1st Semester Back Examination 2024-25 will be held from 13th
+                        Jan 2025 onwards as per the attached examination schedule.
+                        <span class="more">More...</span>
+                    </p>
+                    <p class="author">Dr. XYZ</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>This Site is Maintained by GEC</p>
+    </footer>
+
+    <script src="Home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEC Information System - Admin Interface</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/Images/college_logo.png" alt="GEC Logo">
+        </div>
+        <div class="header-right">
+            <div class="profile-and-welcome">
+                <div class="welcome-text">
+                    <p id="welcomeUser">Welcome, Admin</p>
+                    <p id="loginTime"></p>
+                </div>
+                <div class="profile-picture">
+                    <img src="/Images/profile.png" alt="No Profile Photo" />
+                </div>
+            </div>
+            <div class="logout-change-password">
+                <a href="Landing.html">Log Out</a>
+                <a href="#">Change My Password</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Academic</button>
+                    <div class="dropdown-content">
+                        <a href="#">Elective Courses</a>
+                        <a href="#">Final Exam</a>
+                        <a href="#">Knowledge Assessment</a>
+                        <a href="#">Mini Project and Semester</a>
+                        <a href="#">Online Feedback System</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Administrative</button>
+                    <div class="dropdown-content">
+                        <a href="#">Grievance Cell</a>
+                        <a href="#">Project Management System</a>
+                    </div>
+                </div>
+                <button>Facility Complaint</button>
+                <button>Online Event Registration</button>
+                <button>Student Desk</button>
+                <button>Student Handbook</button>
+                <button id="updateBusSchedule">Update Bus Schedule</button>
+            </nav>
+            <div class="nist-logo">
+                <img src="nist_logo_large.png" alt="NIST Logo Large">
+            </div>
+        </aside>
+
+        <main class="notice-board">
+            <h2>Notice Board</h2>
+            <div class="notices" id="notices">
+                <!-- Notices will be dynamically loaded here -->
+            </div>
+
+            <div id="noticeForm" class="hidden">
+                <h3>Add New Notice</h3>
+                <label for="noticeTitle">Title:</label>
+                <input type="text" id="noticeTitle" placeholder="Enter notice title" required>
+
+                <label for="noticeDesc">Description:</label>
+                <textarea id="noticeDesc" placeholder="Enter notice details" required></textarea>
+
+                <label for="noticeFile">Attach File (optional):</label>
+                <input type="file" id="noticeFile">
+
+                <button id="submitNotice">Submit</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="adminDashboard.js"></script>
+</body>
+</html>

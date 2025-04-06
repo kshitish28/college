@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="Attendance.css">
+    <script defer src="Attendance.js"></script>
+</head>
+<body>
+
+    <!-- 🔹 Top Navigation Bar -->
+    <div class="top-bar">
+        <div class="logo">View Attendance</div>
+        <div class="top-right">
+            <a href="#">Back</a>
+            <a href="#">Home</a>
+            <a href="Landing.html" class="logout-btn">Log Out</a>
+        </div>
+    </div>
+
+    <!-- ✅ Profile Bar -->
+    <div class="user-bar">
+        <div class="logo">
+            <img src="/Images/college_logo.png" alt="Logo">
+        </div>
+    
+        <div class="top-right">
+            <div class="user-info">
+                <p>Welcome <strong>User</strong></p>
+                <p>Logged in as <strong>Student</strong></p>
+                <p id="last-updated">Updated on: <span id="update-time"></span></p>     
+            </div>
+            <div class="profile">
+                <img src="/Images/profile.png" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- ✅ Sidebar -->
+        <div class="sidebar">
+            <a href="StudentDesk.html"><button class="sidebar-btn">View Information</button></a>
+            <a href="Attendance.html"><button class="sidebar-btn active">View Attendance</button></a>
+            <a href="marks.html"><button class="sidebar-btn">View Internal Marks</button></a>
+            <a href="dues.html"><button class="sidebar-btn">View Dues</button></a>
+            <a href="clearance.html"><button class="sidebar-btn">View Clearance Details</button></a>
+            <a href="regular_registration.html"><button class="sidebar-btn">Regular Registration</button></a>
+            <a href="back_paper_registration.html"><button class="sidebar-btn">Back Paper Registration</button></a>
+            <a href="remedial_registration.html"><button class="sidebar-btn">Remedial Registration</button></a>
+            <a href="special_exam.html"><button class="sidebar-btn">Special Exam Registration</button></a>
+            <a href="timetable.html"><button class="sidebar-btn">View Timetable</button></a>
+            <a href="registration.html"><button class="sidebar-btn">Event Registration</button></a>
+        </div>
+        
+        <!-- ✅ Content Area -->
+        <div class="content">
+            <div class="semester-buttons">
+                <button class="sem-btn" onclick="showSemester(1)">Semester 1</button>
+                <button class="sem-btn" onclick="showSemester(2)">Semester 2</button>
+                <button class="sem-btn active" onclick="showSemester(3)">Semester 3</button>
+                <button class="sem-btn" onclick="showSemester(4)">Semester 4</button>
+            </div>
+
+            <!-- Semester 4 Attendance -->
+            <div class="semester" id="semester4">
+                <h2>Semester: 4</h2>
+                <table class="info-table">
+                    <tr class="title-row">
+                        <th>Sl#</th>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Course Type</th>
+                        <th>Attendance Details</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Organization</td>
+                        <td>22CS4PC01T</td>
+                        <td>Theory</td>
+                        <td>13 / 23 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Data Science</td>
+                        <td>22CS4PE02T</td>
+                        <td>Theory</td>
+                        <td>8 / 14 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Design of Algorithms</td>
+                        <td>22CS4PC03T</td>
+                        <td>Theory</td>
+                        <td>14 / 18 (78%)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Semester 3 Attendance -->
+            <div class="semester" id="semester3">
+                <h2>Semester: 3</h2>
+                <table class="info-table">
+                    <tr class="title-row">
+                        <th>Sl#</th>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Course Type</th>
+                        <th>Attendance Details</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Organization</td>
+                        <td>22CS4PC01T</td>
+                        <td>Theory</td>
+                        <td>13 / 23 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Data Science</td>
+                        <td>22CS4PE02T</td>
+                        <td>Theory</td>
+                        <td>8 / 14 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Design of Algorithms</td>
+                        <td>22CS4PC03T</td>
+                        <td>Theory</td>
+                        <td>14 / 18 (78%)</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Semester 2 Attendance -->
+            <div class="semester" id="semester2">
+                <h2>Semester: 2</h2>
+                <table class="info-table">
+                    <tr class="title-row">
+                        <th>Sl#</th>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Course Type</th>
+                        <th>Attendance Details</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Organization</td>
+                        <td>22CS4PC01T</td>
+                        <td>Theory</td>
+                        <td>13 / 23 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Data Science</td>
+                        <td>22CS4PE02T</td>
+                        <td>Theory</td>
+                        <td>8 / 14 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Design of Algorithms</td>
+                        <td>22CS4PC03T</td>
+                        <td>Theory</td>
+                        <td>14 / 18 (78%)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Semester 1 Attendance -->
+            <div class="semester" id="semester1">
+                <h2>Semester: 1</h2>
+                <table class="info-table">
+                    <tr class="title-row">
+                        <th>Sl#</th>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Course Type</th>
+                        <th>Attendance Details</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Organization</td>
+                        <td>22CS4PC01T</td>
+                        <td>Theory</td>
+                        <td>13 / 23 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Data Science</td>
+                        <td>22CS4PE02T</td>
+                        <td>Theory</td>
+                        <td>8 / 14 (57%)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Design of Algorithms</td>
+                        <td>22CS4PC03T</td>
+                        <td>Theory</td>
+                        <td>14 / 18 (78%)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSemester(sem) {
+            document.querySelectorAll(".semester").forEach(el => el.style.display = "none");
+            document.querySelector(`#semester${sem}`).style.display = "block";
+
+            document.querySelectorAll(".sem-btn").forEach(btn => btn.classList.remove("active"));
+            document.querySelectorAll(".sem-btn")[sem - 1].classList.add("active");
+        }
+        
+        document.getElementById('update-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Internal Marks</title>
+    <link rel="stylesheet" href="marks.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">View Internal Marks</div>
+        <div class="top-right">
+            <a href="#">Back</a>
+            <a href="#">Home</a>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+
+    <div class="user-bar">
+        <div class="logo">
+            <img src="/Images/college_logo.png" alt="Logo">
+            <div class="logo-text"></div>
+        </div>
+    
+        <div class="top-right">
+            <div class="user-info">
+                <p>Welcome <strong>User</strong></p>
+                <p>Logged in as <strong>Student</strong></p>
+                <p id="last-updated">Updated on: <span id="update-time"></span></p>     
+                <p></p>
+            </div>
+            <div class="profile">
+                <img src="/Images/profile.png" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="StudentDesk.html"><button class="sidebar-btn">View Information</button></a>
+            <a href="Attendance.html"><button class="sidebar-btn">View Attendance</button></a>
+            <a href="marks.html"><button class="sidebar-btn active">View Internal Marks</button></a>
+            <a href="dues.html"><button class="sidebar-btn">View Dues</button></a>
+            <a href="clearance.html"><button class="sidebar-btn">View Clearance Details</button></a>
+            <a href="regular_registration.html"><button class="sidebar-btn">Regular Registration</button></a>
+            <a href="back_paper_registration.html"><button class="sidebar-btn">Back Paper Registration</button></a>
+            <a href="remedial_registration.html"><button class="sidebar-btn">Remedial Registration</button></a>
+            <a href="special_exam.html"><button class="sidebar-btn">Special Exam Registration</button></a>
+            <a href="timetable.html"><button class="sidebar-btn">View Timetable</button></a>
+            <a href="registration.html"><button class="sidebar-btn">Event Registration</button></a>
+        </div>
+        
+
+        <div class="content">
+            <div class="semester-buttons">
+                <button class="sem-btn" onclick="showSemester(1)">Semester 1</button>
+                <button class="sem-btn" onclick="showSemester(2)">Semester 2</button>
+                <button class="sem-btn active" onclick="showSemester(3)">Semester 3</button>
+                <button class="sem-btn active" onclick="showSemester(4)">Semester 4</button>
+            </div>
+
+            <div class="semester" id="semester1" style="display: none;">
+                <h2>Semester: 1</h2>
+                <div class="subject-marks">
+                    <h3>Subject: Physics</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>SURPRISE TEST</td>
+                            <td>60 / 100</td>
+                            <td>3 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>48 / 50</td>
+                            <td>2.4 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-2</td>
+                            <td>49 / 50</td>
+                            <td>2.45 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>43 / 50</td>
+                            <td>2.15 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>25 / 50</td>
+                            <td>15 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-2</td>
+                            <td>25 / 50</td>
+                            <td>1.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>67 / 100</td>
+                            <td>3.35 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>29.6 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subject-marks">
+                    <h3>Subject: Basic Mechanical Engineering</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>80 / 100</td>
+                            <td>4 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>45 / 50</td>
+                            <td>2.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>30 / 50</td>
+                            <td>18 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>90 / 100</td>
+                            <td>4.5 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>28.75 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="semester" id="semester2" style="display: none;">
+                <h2>Semester: 2</h2>
+                <div class="subject-marks">
+                    <h3>Subject: Chemistry</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>SURPRISE TEST</td>
+                            <td>60 / 100</td>
+                            <td>3 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>48 / 50</td>
+                            <td>2.4 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-2</td>
+                            <td>49 / 50</td>
+                            <td>2.45 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>43 / 50</td>
+                            <td>2.15 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>25 / 50</td>
+                            <td>15 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-2</td>
+                            <td>25 / 50</td>
+                            <td>1.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>67 / 100</td>
+                            <td>3.35 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>29.6 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subject-marks">
+                    <h3>Subject: Basic Civil Engineering</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>80 / 100</td>
+                            <td>4 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>45 / 50</td>
+                            <td>2.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>30 / 50</td>
+                            <td>18 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>90 / 100</td>
+                            <td>4.5 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>28.75 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="semester" id="semester3" style="display: none;">
+                <h2>Semester: 3</h2>
+                <div class="subject-marks">
+                    <h3>Subject: Database Management System</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>SURPRISE TEST</td>
+                            <td>60 / 100</td>
+                            <td>3 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>48 / 50</td>
+                            <td>2.4 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-2</td>
+                            <td>49 / 50</td>
+                            <td>2.45 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>43 / 50</td>
+                            <td>2.15 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>25 / 50</td>
+                            <td>15 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-2</td>
+                            <td>25 / 50</td>
+                            <td>1.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>67 / 100</td>
+                            <td>3.35 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>29.6 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subject-marks">
+                    <h3>Subject: Data Science</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>80 / 100</td>
+                            <td>4 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>45 / 50</td>
+                            <td>2.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>30 / 50</td>
+                            <td>18 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>90 / 100</td>
+                            <td>4.5 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>28.75 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="semester" id="semester4" style="display: none;">
+                <h2>Semester: 4</h2>
+                <div class="subject-marks">
+                    <h3>Subject: Java Programming</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>SURPRISE TEST</td>
+                            <td>60 / 100</td>
+                            <td>3 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>48 / 50</td>
+                            <td>2.4 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-2</td>
+                            <td>49 / 50</td>
+                            <td>2.45 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>43 / 50</td>
+                            <td>2.15 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>25 / 50</td>
+                            <td>15 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-2</td>
+                            <td>25 / 50</td>
+                            <td>1.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>67 / 100</td>
+                            <td>3.35 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>29.6 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="subject-marks">
+                    <h3>Subject: Web Technologies</h3>
+                    <table class="info-table">
+                        <tr class="title-row">
+                            <th>Test Name</th>
+                            <th>Marks</th>
+                            <th>Final Marks</th>
+                        </tr>
+                        <tr>
+                            <td>ASSIGNMENT-1</td>
+                            <td>80 / 100</td>
+                            <td>4 / 5</td>
+                        </tr>
+                        <tr>
+                            <td>QUIZ-1</td>
+                            <td>45 / 50</td>
+                            <td>2.25 / 2.5</td>
+                        </tr>
+                        <tr>
+                            <td>MIDTERM</td>
+                            <td>30 / 50</td>
+                            <td>18 / 30</td>
+                        </tr>
+                        <tr>
+                            <td>ATTENDANCE</td>
+                            <td>90 / 100</td>
+                            <td>4.5 / 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Total Marks:</td>
+                            <td>28.75 / 50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('update-time').textContent = new Date().toLocaleString();
+    </script>
+    <script src="marks.js"></script>
+</body>
+</html>

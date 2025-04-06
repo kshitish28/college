@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .schedule-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .date {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .admin-section {
+            margin-top: 30px;
+        }
+
+        .admin-section input[type="file"] {
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bus Schedule for Today</h1>
+        <img id="bus-schedule-image" class="schedule-image" src="/Images/schedule.jpg" alt="Bus Schedule">
+        <p class="date" id="date"></p>
+
+        <div id="admin-section" class="admin-section hidden">
+            <h2>Admin Section: Upload a New Schedule Image</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="uploadBtn">Upload Image</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the current date
+        function displayDate() {
+            const today = new Date();
+            document.getElementById('date').textContent = `Today's Date: ${today.toDateString()}`;
+        }
+
+        // Check user role and show admin section if admin
+        function checkUserRole() {
+            const role = localStorage.getItem('role');
+            const adminSection = document.getElementById('admin-section');
+
+            if (role === 'admin') {
+                adminSection.classList.remove('hidden');
+
+                // Handle image upload
+                document.getElementById('uploadBtn').addEventListener('click', function () {
+                    const fileInput = document.getElementById('imageUpload');
+                    const file = fileInput.files[0];
+
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            // Update the bus schedule image
+                            document.getElementById('bus-schedule-image').src = e.target.result;
+
+                            // Show success message
+                            alert("Image uploaded successfully!");
+
+                            // Redirect to admin dashboard after 1.5 seconds
+                            setTimeout(() => {
+                                window.location.href = "adminDashboard.html";
+                            }, 1500);
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Please choose an image file to upload.');
+                    }
+                });
+            }
+        }
+
+        // On page load, execute functions
+        window.onload = function () {
+            displayDate();
+            checkUserRole();
+        };
+
+    </script>
+</body>
+
+</html>
